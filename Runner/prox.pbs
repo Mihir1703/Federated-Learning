@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#PBS -l nodes=dgx
+#PBS -q max_dgx
+
+#PBS -M 201112028@stu.manit.ac.in
+
+source .env/bin/activate
+cd 'Federate Learning'
+python multi_client_prox.py
